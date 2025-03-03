@@ -1,0 +1,17 @@
+<view class="container">
+  <!-- 搜索框 -->
+  <input placeholder="请输入城市名称" bindinput="onInput" bindconfirm="onSearch" />
+  <button bindtap="onSearch">搜索</button>
+
+  <!-- 历史记录链接 -->
+  <navigator url="/pages/history/history">历史记录</navigator>
+
+  <!-- 天气信息展示区域 -->
+  <view wx:if="{{weatherInfo}}">
+    <view>城市：{{weatherInfo.city}}</view>
+    <view>温度：{{weatherInfo.temperature}}</view>
+    <view>风向：{{weatherInfo.windDirection}}</view>
+    <view>温度建议：{{weatherInfo.temperatureSuggestion}}</view>
+  </view>
+  <view wx:if="{{errorMsg}}">{{errorMsg}}</view>
+</view>

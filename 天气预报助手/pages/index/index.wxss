@@ -1,0 +1,22 @@
+.container {
+  padding: 20px;
+}
+
+input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  background - color: #007aff;
+  color: white;
+  border: none;
+}
+
+navigator {
+  display: block;
+  margin - top: 10px;
+  color: #007aff;
+}

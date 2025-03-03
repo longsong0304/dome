@@ -1,0 +1,3 @@
+<view class="container">
+  <view wx:for="{{searchHistory}}" wx:key="*this">{{item}}</view>
+</view>
